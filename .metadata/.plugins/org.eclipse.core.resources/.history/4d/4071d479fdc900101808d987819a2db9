@@ -1,0 +1,11 @@
+package com.patil;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestB {
+	public static void main(String[] args) {
+		
+		Resource resource = new ClassPathXmlApplicationContext("config-a.xml")
+	}
+
+}

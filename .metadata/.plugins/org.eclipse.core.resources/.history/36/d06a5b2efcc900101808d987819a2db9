@@ -1,0 +1,9 @@
+package com.patil;
+
+public class Mobile {
+	
+	public void mobile() {
+		System.out.println("Songs playing");
+	}
+
+}

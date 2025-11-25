@@ -1,0 +1,21 @@
+package com.patil;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.Resource;
+
+public class TestB {
+	public static void main(String[] args) {
+	
+		ApplicationContext app = new ClassPathXmlApplicationContext("config-a.xml");
+		
+		Student student = (Student) app.getBean("myStudent");
+		student.play();
+		
+		System.out.println("----------------");
+		
+		Mobile mobile = (Mobile) app.getBean("myMobile");
+		mobile.sing();
+	}
+
+}
